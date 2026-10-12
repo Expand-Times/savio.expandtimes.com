@@ -2,42 +2,33 @@
 <html lang="en">
 
 <head>
-	<title>Focus On: Minimalist Launcher</title>
+	<title>Savio: Screen Time & Focus AI - Stop Scrolling, Regain Focus</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Savio is an AI focus coach and Focus App that helps you stop scrolling, block Reels & Shorts, cut screen time, and regain productivity. Study timer, smart app blocker, and digital detox." />
+	<meta name="keywords" content="Savio, Focus, Focus mode, screen time, app block, focus timer, pomodoro, Focus App, productivity, stop scrolling, ai focus coach, pomodoro study timer, No phone, digital detox, Reels blocker, phone addiction, Shorts Blocking" />
+	<meta name="author" content="Expand Times" />
+	
+	<!-- Open Graph / Meta -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://savio.expandtimes.com/" />
+	<meta property="og:title" content="Savio: Screen Time & Focus AI {Save your time}" />
+	<meta property="og:description" content="Stop scrolling, reduce screen time, regain focus and block Reels & Shorts with Savio, your AI focus coach." />
+	<meta property="og:image" content="image/img-5.png" />
+
 	<link rel="icon" href="image/favicon.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="70">
-	<script src="js/vendor.bundle.js"></script>
-	<script src="js/script.js"></script>
 
-	<script>
-		window.addEventListener("scroll", function () {
-			let logo = document.getElementById("logo");
-
-			if (window.scrollY > 50) {
-				// scroll হলে blue effect
-				logo.style.filter = "invert(22%) sepia(94%) saturate(4742%) hue-rotate(195deg) brightness(97%) contrast(92%)";
-			} else {
-				// scroll কম হলে white
-				logo.style.filter = "brightness(0) invert(1)";
-			}
-		});
-	</script>
-
-</body>
-
-</html>
 <!-- Preloader -->
 <div id="preloader">
 	<div id="status">&nbsp;</div>
 </div>
-<!--  -->
 
-<!-- header -->
+<!-- Header -->
 <header>
 	<!-- navbar -->
 	<nav id="navbar" class="navbar navbar-custom nav-light navbar-fixed-top" data-spy="affix" data-offset-top="70">
@@ -49,9 +40,10 @@
 						data-target="#bs-example-navbar-collapse-1">
 						<i class="fa fa-bars"></i>
 					</button>
-					<a href="index.html">
-						<img id="logo" src="images/LogoSPS1.png" alt="Expand Times logo"
-							style="width: 150px; height: 50px; transition: 0.3s; filter: brightness(0) invert(1);">
+					<a href="index.html" class="navbar-brand-link" style="display: inline-flex; align-items: center; text-decoration: none; padding-top: 10px;">
+						<img id="logo" src="images/LogoSPS1.png" alt="Savio - Expand Times"
+							style="width: 130px; height: 42px; transition: 0.3s; filter: brightness(0) invert(1);">
+						<span id="logo-text" style="color: #ffffff; font-size: 22px; font-weight: 700; margin-left: 10px; letter-spacing: 0.5px; transition: 0.3s;">Savio</span>
 					</a>
 				</div>
 
@@ -60,21 +52,29 @@
 					<div class="right-nav text-right">
 						<ul class="nav navbar-nav menu">
 							<li>
-								<a href="#feature">Feature</a>
+								<a href="#feature">Features</a>
 							</li>
 							<li>
 								<a href="#overview">Overview</a>
 							</li>
-
+							<li>
+								<a href="#step">How It Works</a>
+							</li>
+							<li>
+								<a href="#permissions">Permissions</a>
+							</li>
 							<li>
 								<a href="#pricing">Pricing</a>
+							</li>
+							<li>
+								<a href="#faq">FAQ</a>
 							</li>
 							<li>
 								<a href="#contact">Contact</a>
 							</li>
 						</ul>
 						<div class="nav-btn">
-							<a href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher" class="btn grdnt-purple">Get It Now</a>
+							<a href="#download" class="btn grdnt-purple">Download Now</a>
 						</div>
 					</div>
 				</div>
@@ -90,23 +90,32 @@
 			<div class="container">
 				<div class="row">
 					<div class="row">
-						<div class="col-sm-5">
+						<div class="col-sm-6">
 							<div class="intro-text light">
-								<h1 style="color:white;">Focus On</h1>
-								<h4 style="color:white;">Minimalist Launcher for Digital Detox</h4>
+								<span class="badge" style="background: rgba(255,255,255,0.2); font-size: 14px; padding: 6px 16px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; display: inline-block;">Screen Time & Focus AI</span>
+								<h1 style="color:white; font-size: 52px; font-weight: 700; line-height: 1.1; margin-bottom: 8px;">Savio</h1>
+								<h4 style="color: rgba(255,255,255,0.9); font-weight: 400; font-style: italic; margin-bottom: 20px;">{Save your time}</h4>
 
-								<p style="color:white; margin-top:20px;">
-									Turn your focus on to live in the real world.
-									Reduce screen time, avoid distractions, and take control of your digital life.
+								<p style="color:white; font-size: 17px; line-height: 1.6; margin-top: 15px;">
+									Pick up your phone for one quick check, and look up an hour later? <strong>Savio</strong> is an AI focus coach and Focus App that helps you stop scrolling, cut your screen time, and get your productivity back.
 								</p>
-								<div class="btn-holder">
-									<a href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher" class="btn btn-dark">Download Now</a>
+								<p style="color: rgba(255,255,255,0.9); font-size: 15px; line-height: 1.5; margin-top: 10px;">
+									Savio guides you with daily reflections and personalized tips, so beating phone addiction feels like progress, not punishment.
+								</p>
+
+								<div class="btn-holder" style="margin-top: 25px;">
+									<a href="#download" class="btn btn-dark" style="margin-right: 12px; margin-bottom: 10px;">
+										<i class="fa fa-android" style="margin-right: 8px;"></i>Download Savio
+									</a>
+									<a href="#feature" class="btn btn-white" style="margin-bottom: 10px;">
+										Explore Features
+									</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-7">
+						<div class="col-sm-6">
 							<div class="text-right img-pre">
-								<img alt="" src="image/img-5.png">
+								<img alt="Savio Screen Time and Focus App" src="image/img-5.png">
 							</div>
 						</div>
 					</div>
@@ -118,7 +127,7 @@
 </header>
 <!-- End header -->
 
-<!--Count -->
+<!-- Trust & Rating Strip -->
 <section class="review">
 	<div class="container">
 		<div class="row">
@@ -127,15 +136,16 @@
 					<div class="col-sm-8 flx-container align-flx-center flx-off-x wow animated fadeInUp"
 						data-wow-duration="2s" data-wow-delay=".2s">
 						<div class="col-md-4">
-							<img alt="" src="image/img-iso.png">
+							<img alt="Focus Progress" src="image/img-iso.png">
 						</div>
 						<div class="col-md-8">
-							<h4>Your experience gets better and better over time.</h4>
+							<h4 style="font-weight: 600; line-height: 1.4;">Stop scrolling, reduce screen time, regain focus and block Reels & Shorts.</h4>
+							<p style="color: #666; margin-top: 6px;">Your focus and productivity get better and better every day.</p>
 						</div>
 					</div>
 					<div class="col-sm-4 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-						<div class="bg-gray rating-card">
-							<h4>4.5</h4>
+						<div class="bg-gray rating-card text-center">
+							<h4 style="font-size: 36px; font-weight: 700; color: #702dda; margin-bottom: 5px;">4.8</h4>
 							<ul class="rating-list">
 								<li><i class="fa fa-star" aria-hidden="true"></i></li>
 								<li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -143,7 +153,7 @@
 								<li><i class="fa fa-star" aria-hidden="true"></i></li>
 								<li><i class="fa fa-star" aria-hidden="true"></i></li>
 							</ul>
-							<p>From 10,000 Reviews</p>
+							<p style="margin-top: 6px; font-weight: 500;">AI Focus Coach & Blocker</p>
 						</div>
 					</div>
 				</div>
@@ -151,65 +161,78 @@
 		</div>
 	</div>
 </section>
-<!-- End count -->
+<!-- End review -->
 
-
-<!-- Feature -->
+<!-- Core Features -->
 <section id="feature" class="sec-pad-lg">
 	<div class="container">
 		<div class="row">
+			<div class="text-center section-text wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+				<h4 style="font-size: 32px; font-weight: 700;">Engineered to Beat Doomscrolling</h4>
+				<div class="spce"></div>
+				<p class="large fx-wdth" style="max-width: 680px; margin: 0 auto; color: #666;">
+					Savio gives you the precise tools you need to stop mindless scrolling, manage screen time, and conquer distractions without cutting you off from the apps you need.
+				</p>
+			</div>
+			<div class="spce"></div>
 			<div class="items grad-prple row sec-pad-sm pt-0">
 				<div class="col-feat shad-item">
+					<!-- Feature 1 -->
 					<div class="col-md-3 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.2s"
 						data-wow-delay=".2s">
 						<div class="item">
 							<div class="icon icon-bg-md grdnt-tranquil">
-								<span class="ti-mobile"></span>
+								<span class="ti-video-clapper"></span>
 							</div>
 							<div class="spce sm"></div>
-							<h5>Minimalist Interface</h5>
-
+							<h5>Reels & Shorts Blocker</h5>
 							<div class="spce sm"></div>
-							<p>Clean and distraction-free home screen.</p>
+							<p>Detects when short-video feeds open and halts them right there. Long-form videos and normal apps stay playable.</p>
 						</div>
 						<div class="grdnt-tranquil before-bg"></div>
 					</div>
+
+					<!-- Feature 2 -->
 					<div class="col-md-3 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.2s"
-						data-wow-delay=".2s">
+						data-wow-delay=".3s">
 						<div class="item">
 							<div class="icon icon-bg-md grdnt-blue">
-								<span class="ti-headphone"></span>
+								<span class="ti-lock"></span>
 							</div>
 							<div class="spce sm"></div>
-							<h5>Screen Time Limit</h5>
+							<h5>Smart App Block</h5>
 							<div class="spce sm"></div>
-							<p>Track and reduce phone usage easily.</p>
+							<p>Pick distracting apps and block them on your schedule during study, deep work, or bedtime so your screen time drops.</p>
 						</div>
 						<div class="grdnt-blue before-bg"></div>
 					</div>
+
+					<!-- Feature 3 -->
 					<div class="col-md-3 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.2s"
-						data-wow-delay=".2s">
+						data-wow-delay=".4s">
 						<div class="item">
 							<div class="icon icon-bg-md grdnt-cyan">
-								<span class="ti-credit-card"></span>
+								<span class="ti-light-bulb"></span>
 							</div>
 							<div class="spce sm"></div>
-							<h5>Focus Mode</h5>
+							<h5>AI Focus Coach</h5>
 							<div class="spce sm"></div>
-							<p>Block distractions and stay productive.</p>
+							<p>Guides you with daily reflections and personalized tips so beating phone addiction feels like real progress, not punishment.</p>
 						</div>
 						<div class="grdnt-cyan before-bg"></div>
 					</div>
+
+					<!-- Feature 4 -->
 					<div class="col-md-3 col-sm-6 res-margin wow animated fadeInUp" data-wow-duration="1.2s"
-						data-wow-delay=".2s">
+						data-wow-delay=".5s">
 						<div class="item">
 							<div class="icon icon-bg-md grdnt-purple">
-								<span class="ti-rocket"></span>
+								<span class="ti-timer"></span>
 							</div>
 							<div class="spce sm"></div>
-							<h5>Fast Performance</h5>
+							<h5>Study & Deep Work Timers</h5>
 							<div class="spce sm"></div>
-							<p>No ads, no lag, fully lightweight.</p>
+							<p>Flexible study timers, Pomodoro streaks, Focus mode, and dedicated No Phone sessions that protect your attention.</p>
 						</div>
 						<div class="grdnt-purple before-bg"></div>
 					</div>
@@ -220,73 +243,54 @@
 </section>
 <!-- End feature -->
 
-
-<!-- Video -->
-<section id="video" class="sec-pad-lg pt-0 light">
-	<div class="text-center row">
-		<div class="video-wrapper">
-			<img data-top="width: 50%; height:auto; top: -48%; left: -48%;"
-				data-40p-bottom="width: 100%; height: auto; top: 0%; left: 0%;" alt=""
-				src="images/video-thumb-image-1.jpg">
-			<div class="text-center btn-over grad-prple">
-				<!-- <h3 style="color: black;">Manage everything</h3> -->
-				<div class="spce"></div>
-				<a class="btn-round video" href="https://www.youtube.com/watch?v=LHHvv2Wk9DQ"><i
-						class="fa fa-play clip-txt" aria-hidden="true"></i></a>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- // -->
-
-
-<!-- Overview -->
-<section id="video" class="grdnt-purple light">
+<!-- Feature Spotlight: Block Reels and Shorts -->
+<section class="grdnt-purple light">
 	<div class="container">
 		<div class="row sec-pad-lg">
 			<div class="col-md-7 col-sm-6 text-center res-margin-sm">
 				<div class="bg-rotate">
-					<img alt="" src="image/bg-rotate.png">
+					<img alt="Graphic Background" src="image/bg-rotate.png">
 				</div>
-				<img alt="" src="images/service-image-1.png">
+				<img alt="Block Reels and Shorts" src="images/service-image-1.png">
 			</div>
 			<div class="col-md-5 col-sm-6">
 				<div class="section-text wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-					<h4>A complete toolkit that allows you to deliver your API-first product</h4>
+					<span class="badge" style="background: rgba(255,255,255,0.2); font-size: 13px; padding: 5px 14px; border-radius: 15px; margin-bottom: 12px; display: inline-block;">Targeted Algorithm Defense</span>
+					<h3 style="color: white; font-weight: 700; line-height: 1.3;">Block Reels and Shorts, Keep the Rest</h3>
+					<div class="spce sm"></div>
+					<p style="color: rgba(255,255,255,0.9); font-size: 16px; line-height: 1.6;">
+						Savio's Reels blocker and Shorts blocking detect when a short-video feed opens and stop it right there. Long-form videos and everything else in the same apps play as normal.
+					</p>
+					<p style="color: rgba(255,255,255,0.9); font-size: 16px; line-height: 1.6;">
+						It is the simplest way to stop scrolling without giving up the apps you actually need.
+					</p>
 				</div>
-				<div class="right-dir-col wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+				<div class="right-dir-col wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".3s" style="margin-top: 25px;">
 					<div class="list">
 						<div class="icon-bg-md grdnt-tranquil">
-							<span class="ti-comment-alt"></span>
+							<span class="ti-close"></span>
 						</div>
 						<div class="text">
-							<h6 class="fw-700">
-								Payment Request
-							</h6>
-							<p>Meeting Clients Utinam laudem mea ei. Est ex cotidieque delicatissimi Doctus praesent
-								usu ut.</p>
+							<h6 class="fw-700" style="color: white;">Stops Infinite Feed Loops</h6>
+							<p style="color: rgba(255,255,255,0.8);">Immediately intercepts addictive short-video loops on Instagram and YouTube.</p>
 						</div>
 					</div>
 					<div class="list">
 						<div class="icon-bg-md grdnt-blue">
-							<span class="ti-wallet"></span>
+							<span class="ti-check"></span>
 						</div>
 						<div class="text">
-							<h6 class="fw-700">
-								No Credit Card
-							</h6>
-							<p>Utinam laudem mea ei. Est ex cotidieque delicatissimi Doctus praesent usu ut.</p>
+							<h6 class="fw-700" style="color: white;">Maintains What You Need</h6>
+							<p style="color: rgba(255,255,255,0.8);">Search for tutorials, watch lectures, and communicate without getting trapped in algorithmic reels.</p>
 						</div>
 					</div>
 					<div class="list">
 						<div class="icon-bg-md grdnt-cyan">
-							<span class="ti-bolt"></span>
+							<span class="ti-shield"></span>
 						</div>
 						<div class="text">
-							<h6 class="fw-700">
-								Location Check
-							</h6>
-							<p>Utinam laudem mea ei. Est ex cotidieque delicatissimi Doctus praesent usu ut.</p>
+							<h6 class="fw-700" style="color: white;">Safe DNS Content Filtering</h6>
+							<p style="color: rgba(255,255,255,0.8);">Built-in local Safe DNS filtering to block adult and harmful sites on demand.</p>
 						</div>
 					</div>
 				</div>
@@ -294,17 +298,16 @@
 		</div>
 	</div>
 </section>
-<!-- // -->
+<!-- End Feature Spotlight -->
 
-<!-- Rating -->
+<!-- Rating Breakdown -->
 <section class="rating-section sec-pad-lg">
 	<div class="container">
 		<div class="row">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="rating clearfix wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s"">
-							<div class=" col-xs-6 text-center">
-						<h2>4.5</h2>
+			<div class="col-md-8 col-md-offset-2">
+				<div class="rating clearfix wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+					<div class="col-xs-6 text-center">
+						<h2 style="font-weight: 700; color: #702dda;">4.8</h2>
 						<ul class="rating-list">
 							<li><i class="fa fa-star" aria-hidden="true"></i></li>
 							<li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -312,195 +315,283 @@
 							<li><i class="fa fa-star" aria-hidden="true"></i></li>
 							<li><i class="fa fa-star" aria-hidden="true"></i></li>
 						</ul>
-						<p>App Store Ratings</p>
+						<p>User Satisfaction</p>
 					</div>
 					<div class="col-xs-6 text-center">
-						<h2>4.3</h2>
+						<h2 style="font-weight: 700; color: #0facf3;">-2.5h</h2>
 						<ul class="rating-list">
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
 						</ul>
-						<p>Play Store Ratings</p>
+						<p>Average Daily Screen Time Saved</p>
 					</div>
 				</div>
-				<div class="bg-mockup wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-					<img alt="" src="image/img-6.png">
+				<div class="bg-mockup wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".3s" style="margin-top: 30px;">
+					<img alt="Savio Focus Experience" src="image/img-6.png">
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
 </section>
-<!-- // -->
 
-
-<!-- Overview -->
+<!-- Overview / Deep Dive -->
 <section class="overview" id="overview">
 	<div class="container">
+		<!-- Part 1: Built for Students, Useful for Everyone -->
 		<div class="row sec-pad-lg pt-0">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="flx-container res-center-sm align-flx-center flx-off-xs row">
 					<div class="col-sm-8 col-md-7 res-margin-sm">
 						<div class="overview-img wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-							<img alt="" src="image/img-3.png">
+							<img alt="Savio Study Timer" src="image/img-10.png">
 						</div>
 					</div>
-					<!-- About -->
-					<section class="about-section">
-						<div class="container">
-							<div class="row
-			">
-								<div class="col-md-10 col-md-offset-1">
-									<div class="flx-container res-center-sm align-flx-center flx-off-xs row">
-										<div class="col-sm-8 col-md-7 res-margin-sm">
-											<div class="overview-img wow animated fadeInUp" data-wow-duration="1.2s"
-												data-wow-delay=".2s">
-												<img alt="" src="image/img-10.png">
-											</div>
+					<div class="col-sm-4 col-md-5">
+						<div class="overview-text wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
+							<div class="text">
+								<span class="badge" style="background: #eef2ff; color: #702dda; font-size: 13px; padding: 5px 12px; margin-bottom: 10px; display: inline-block;">Education & Deep Work</span>
+								<h4 style="font-weight: 700; font-size: 28px;">Built for Students, Useful for Everyone</h4>
+								<div class="spce"></div>
+								<p>
+									<strong>Preparing for exams?</strong> Savio helps you stay focused with a Pomodoro study timer, one-tap Focus mode and No Phone sessions, so notifications and short videos stay out of your way.
+								</p>
+								<p>
+									<strong>Working on something big?</strong> A flexible focus timer and smart app block protect your deep work, so you can give your priorities your full attention.
+								</p>
+								<div class="spce sm"></div>
+								<ul class="right-dir-col ft-list grad-pink">
+									<li class="clearfix">
+										<div class="icon-bg-sm">
+											<i class="ti-timer clip-txt"></i>
 										</div>
-										<div class="col-sm-4 col-md-5">
-											<div class="overview-text wow animated fadeInUp" data-wow-duration="1.2s"
-												data-wow-delay=".2s">
-												<div class="text">
-													<h4>About Focus On</h4>
-													<div class="spce"></div>
-													<p>
-														Focus On: Minimalist Launcher helps you reduce mindless
-														scrolling,
-														escape procrastination, and take back control of your time.
-													</p>
-													<div class="spce sm"></div>
-													<ul class="right-dir-col ft-list grad-pink">
-														<li class="clearfix">
-															<div class="icon-bg-sm">
-																<i class="ti-palette clip-txt"></i>
-															</div>
-															<div class="text">Reduce screen times</div>
-														</li>
-														<li class="clearfix">
-															<div class="icon-bg-sm">
-																<i class="ti-bolt clip-txt"></i>
-															</div>
-															<div class="text">Distraction-free design</div>
-														</li>
-														<li class="clearfix">
-															<div class="icon-bg-sm">
-																<i class="ti-power-off clip-txt"></i>
-															</div>
-															<div class="text">Works offline with full privacy
-															</div>
-														</li>
-													</ul>
-												</div>
-											</div>
+										<div class="text">
+											<strong>Pomodoro study timer streaks</strong> that make productivity an automatic daily habit
 										</div>
-									</div>
+									</li>
+									<li class="clearfix">
+										<div class="icon-bg-sm">
+											<i class="ti-control-pause clip-txt"></i>
+										</div>
+										<div class="text">
+											<strong>Focus mode:</strong> a calm, distraction-free session mode for deep work
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="icon-bg-sm">
+											<i class="ti-mobile clip-txt"></i>
+										</div>
+										<div class="text">
+											<strong>No Phone sessions:</strong> set the time, put the phone down, and let Savio protect your attention
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Part 2: Break Phone Addiction -->
+		<div class="row sec-pad pt-0">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="flx-container res-center-sm align-flx-center flx-off-xs row">
+					<div class="col-sm-4 col-md-5 res-margin-sm">
+						<div class="overview-text wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
+							<div class="text">
+								<span class="badge" style="background: #fff1f2; color: #e11d48; font-size: 13px; padding: 5px 12px; margin-bottom: 10px; display: inline-block;">Digital Wellbeing</span>
+								<h4 style="font-weight: 700; font-size: 28px;">Break Phone Addiction, One Small Step at a Time</h4>
+								<div class="spce"></div>
+								<p>
+									Phone addiction rarely ends with willpower alone. Savio makes it easier: block Reels and Shorts, set a digital detox goal, run a focus timer, and check your progress at the end of the day.
+								</p>
+								<p>
+									Stop scrolling today and see your screen time drop.
+								</p>
+								<div class="spce sm"></div>
+								<ul class="right-dir-col ft-list grad-pink">
+									<li class="clearfix">
+										<div class="icon-bg-sm">
+											<i class="ti-pie-chart clip-txt"></i>
+										</div>
+										<div class="text">
+											<strong>Screen time tracking</strong> to see where your day goes
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="icon-bg-sm">
+											<i class="ti-heart clip-txt"></i>
+										</div>
+										<div class="text">
+											<strong>Digital detox goals</strong> to help you unplug and live more
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="icon-bg-sm">
+											<i class="ti-comment-alt clip-txt"></i>
+										</div>
+										<div class="text">
+											<strong>Daily reflections & tips</strong> from your personal AI focus coach
+										</div>
+									</li>
+								</ul>
+								<div class="spce"></div>
+								<a href="#download" class="btn grdnt-purple">Start Your Detox</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8 col-md-7 res-margin-sm">
+						<div class="overview-img wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
+							<img alt="Savio Digital Detox" src="image/img-11.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Part 3: Why People Choose Savio & Perfect For -->
+		<div class="row sec-pad pt-0" id="why-savio">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row" style="background: #ffffff; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); padding: 40px 30px; margin: 0;">
+					<div class="col-md-6 res-margin-sm">
+						<h4 style="font-weight: 700; color: #1f2937; margin-bottom: 20px;">
+							<i class="fa fa-check-circle" style="color: #702dda; margin-right: 8px;"></i>Why People Choose Savio
+						</h4>
+						<ul class="ft-list grad-pink" style="padding-left: 0; list-style: none;">
+							<li style="margin-bottom: 14px; display: flex; align-items: flex-start;">
+								<span class="ti-check" style="color: #702dda; font-weight: bold; margin-right: 12px; margin-top: 3px;"></span>
+								<span><strong>Reels blocker and Shorts blocking</strong> that only stop short videos</span>
+							</li>
+							<li style="margin-bottom: 14px; display: flex; align-items: flex-start;">
+								<span class="ti-check" style="color: #702dda; font-weight: bold; margin-right: 12px; margin-top: 3px;"></span>
+								<span><strong>Smart app block</strong> for any distracting app, on your schedule</span>
+							</li>
+							<li style="margin-bottom: 14px; display: flex; align-items: flex-start;">
+								<span class="ti-check" style="color: #702dda; font-weight: bold; margin-right: 12px; margin-top: 3px;"></span>
+								<span><strong>Savio coach</strong> with daily reflections and personalized tips</span>
+							</li>
+							<li style="margin-bottom: 14px; display: flex; align-items: flex-start;">
+								<span class="ti-check" style="color: #702dda; font-weight: bold; margin-right: 12px; margin-top: 3px;"></span>
+								<span><strong>Screen time tracking</strong> to see where your day goes</span>
+							</li>
+							<li style="margin-bottom: 14px; display: flex; align-items: flex-start;">
+								<span class="ti-check" style="color: #702dda; font-weight: bold; margin-right: 12px; margin-top: 3px;"></span>
+								<span><strong>Digital detox goals</strong> to help you unplug</span>
+							</li>
+							<li style="margin-bottom: 14px; display: flex; align-items: flex-start;">
+								<span class="ti-check" style="color: #702dda; font-weight: bold; margin-right: 12px; margin-top: 3px;"></span>
+								<span><strong>Safe DNS filtering</strong> to block adult and harmful sites</span>
+							</li>
+							<li style="margin-bottom: 14px; display: flex; align-items: flex-start;">
+								<span class="ti-check" style="color: #702dda; font-weight: bold; margin-right: 12px; margin-top: 3px;"></span>
+								<span><strong>Focus sessions & No Phone sessions</strong> for calm study</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-md-6">
+						<h4 style="font-weight: 700; color: #1f2937; margin-bottom: 20px;">
+							<i class="fa fa-users" style="color: #0facf3; margin-right: 8px;"></i>Perfect For
+						</h4>
+						<div class="row">
+							<div class="col-sm-12" style="margin-bottom: 12px;">
+								<div style="background: #f8fafc; padding: 14px 18px; border-radius: 10px; border-left: 4px solid #702dda;">
+									<h6 style="font-weight: 700; margin-bottom: 4px;">Students & Exam Prep</h6>
+									<p style="margin: 0; font-size: 14px; color: #64748b;">Beat study procrastination with timed Pomodoro streaks and notification silencing.</p>
 								</div>
 							</div>
-							<div class="row sec-pad pt-0">
-								<div class="col-md-10 col-md-offset-1">
-									<div class="flx-container res-center-sm align-flx-center flx-off-xs row">
-
-										<div class="col-sm-4 col-md-5 res-margin-sm">
-											<div class="overview-text wow animated fadeInUp" data-wow-duration="1.2s"
-												data-wow-delay=".2s">
-												<div class="text">
-
-													<h4>Focus on what truly matters</h4>
-
-													<div class="spce"></div>
-
-													<p>
-														Focus On helps you reduce distractions, limit screen time, and
-														escape mindless scrolling.
-														Built with a clean and minimalist design, it transforms your
-														phone into a calm,
-														productivity-focused environment.
-													</p>
-
-													<div class="spce"></div>
-
-													<a href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher" class="btn grdnt-purple">Download Now</a>
-
-												</div>
-											</div>
-										</div>
-
-										<div class="col-sm-8 col-md-7 res-margin-sm">
-											<div class="overview-img wow animated fadeInUp" data-wow-duration="1.2s"
-												data-wow-delay=".2s">
-												<img alt="Focus On App Preview" src="image/img-11.png">
-											</div>
-										</div>
-
-									</div>
+							<div class="col-sm-12" style="margin-bottom: 12px;">
+								<div style="background: #f8fafc; padding: 14px 18px; border-radius: 10px; border-left: 4px solid #0facf3;">
+									<h6 style="font-weight: 700; margin-bottom: 4px;">Anyone Fighting Phone Addiction</h6>
+									<p style="margin: 0; font-size: 14px; color: #64748b;">Interrupt unconscious phone checks and replace doomscrolling with mindful habits.</p>
+								</div>
+							</div>
+							<div class="col-sm-12" style="margin-bottom: 12px;">
+								<div style="background: #f8fafc; padding: 14px 18px; border-radius: 10px; border-left: 4px solid #10b981;">
+									<h6 style="font-weight: 700; margin-bottom: 4px;">Anyone Starting a Digital Detox</h6>
+									<p style="margin: 0; font-size: 14px; color: #64748b;">Set daily detox targets, disconnect without guilt, and spend quality time in the real world.</p>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div style="background: #f8fafc; padding: 14px 18px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+									<h6 style="font-weight: 700; margin-bottom: 4px;">People Who Want More Productivity</h6>
+									<p style="margin: 0; font-size: 14px; color: #64748b;">Eliminate micro-distractions and unlock hours of uninterrupted deep work every single day.</p>
 								</div>
 							</div>
 						</div>
-					</section>
-					<!-- // -->
-					 <!-- private policy -->
-					  
-					  <!-- // -->
+					</div>
 				</div>
 			</div>
 		</div>
 
 	</div>
 </section>
-<!-- // -->
-<!-- private policy -->
-<!-- // -->
-<!--Working Step -->
+<!-- End Overview -->
+
+<!-- How It Works (Steps) -->
 <section class="step-section grdnt-pink bg-trans-3 sec-pad-lg light" id="step">
 	<div class="container">
 		<div class="row">
-			
 			<div class="text-center section-text wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-				<h4>3 simple steps to regain your focus</h4>
+				<h4 style="font-size: 32px; font-weight: 700;">How It Works</h4>
+				<div class="spce sm"></div>
+				<p class="large" style="color: rgba(255,255,255,0.9);">4 simple steps to stop scrolling and regain your focus</p>
 			</div>
 
-			<div class="steps text-center col-md-8 col-md-offset-2 grad-blue wow animated fadeInUp"
-				data-wow-duration="2s" data-wow-delay=".3s">
+			<div class="steps text-center col-md-10 col-md-offset-1 grad-blue wow animated fadeInUp"
+				data-wow-duration="2s" data-wow-delay=".3s" style="margin-top: 30px;">
 
 				<!-- STEP 1 -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="step-list">
 						<div class="number"><span class="clip-txt">1</span></div>
 						<div class="icon-lg">
-							<span class="ti-download"></span>
+							<span class="ti-target"></span>
 						</div>
-						<h6 class="fw-500">
-							Install Focus On Launcher and set it as your default home screen.
+						<h6 class="fw-500" style="font-size: 15px; line-height: 1.4;">
+							<strong>Choose your goal:</strong> study, deep work, or a digital detox.
 						</h6>
 					</div>
 				</div>
 
 				<!-- STEP 2 -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="step-list res-center-sm">
 						<div class="number"><span class="clip-txt">2</span></div>
 						<div class="icon-lg">
-							<span class="ti-settings"></span>
+							<span class="ti-shield"></span>
 						</div>
-						<h6 class="fw-500">
-							Customize your apps, set screen time limits, and enable focus mode.
+						<h6 class="fw-500" style="font-size: 15px; line-height: 1.4;">
+							<strong>Pick apps to block</strong> and turn on the Reels blocker and Shorts blocker.
 						</h6>
 					</div>
 				</div>
 
 				<!-- STEP 3 -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="step-list">
 						<div class="number"><span class="clip-txt">3</span></div>
 						<div class="icon-lg">
-							<span class="ti-check-box"></span>
+							<span class="ti-timer"></span>
 						</div>
-						<h6 class="fw-500">
-							Enjoy a distraction-free, mindful, and productive phone experience.
+						<h6 class="fw-500" style="font-size: 15px; line-height: 1.4;">
+							<strong>Start Focus mode,</strong> a Pomodoro study timer, or a No Phone session.
+						</h6>
+					</div>
+				</div>
+
+				<!-- STEP 4 -->
+				<div class="col-sm-3">
+					<div class="step-list">
+						<div class="number"><span class="clip-txt">4</span></div>
+						<div class="icon-lg">
+							<span class="ti-thought"></span>
+						</div>
+						<h6 class="fw-500" style="font-size: 15px; line-height: 1.4;">
+							<strong>Check in</strong> with your AI focus coach daily for reflections and tips.
 						</h6>
 					</div>
 				</div>
@@ -509,207 +600,274 @@
 		</div>
 	</div>
 </section>
-<!-- // -->
+<!-- End How It Works -->
+
+<!-- Permissions and Privacy Section -->
+<section id="permissions" class="sec-pad-lg" style="background: #fbfbfd;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="text-center section-text wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+					<span class="badge" style="background: #eef2ff; color: #702dda; font-size: 13px; padding: 5px 14px; border-radius: 15px; margin-bottom: 10px; display: inline-block;">Transparency & Security</span>
+					<h4 style="font-size: 32px; font-weight: 700;">Permissions and Privacy</h4>
+					<div class="spce sm"></div>
+					<p class="large fx-wdth" style="max-width: 720px; margin: 0 auto; color: #666;">
+						Savio is designed with user privacy first. We never harvest your personal data. Here is exactly how platform permissions work:
+					</p>
+				</div>
+				<div class="spce"></div>
+
+				<div class="row">
+					<!-- Accessibility Service -->
+					<div class="col-md-4 col-sm-6 res-margin-sm wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
+						<div style="background: #ffffff; padding: 30px 24px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); height: 100%; border-top: 4px solid #702dda;">
+							<div class="icon-bg-sm grdnt-purple" style="margin-bottom: 15px;">
+								<i class="ti-eye"></i>
+							</div>
+							<h5 style="font-weight: 700; margin-bottom: 12px; color: #111827;">Accessibility Service</h5>
+							<p style="font-size: 14px; color: #4b5563; line-height: 1.6;">
+								Savio uses it to detect when you open apps you choose to limit or block, and to recognise when a Shorts or Reels screen is playing so it can block it.
+							</p>
+							<p style="font-size: 13px; color: #059669; font-weight: 600; line-height: 1.5; margin-top: 10px; background: #ecfdf5; padding: 8px 12px; border-radius: 8px;">
+								✓ Long-form videos and other content are not blocked.<br>
+								✓ Savio does NOT read typed text, messages, or passwords.<br>
+								✓ Does NOT collect or share screen content.
+							</p>
+						</div>
+					</div>
+
+					<!-- VPN Service (Safe DNS) -->
+					<div class="col-md-4 col-sm-6 res-margin-sm wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".3s">
+						<div style="background: #ffffff; padding: 30px 24px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); height: 100%; border-top: 4px solid #0facf3;">
+							<div class="icon-bg-sm grdnt-blue" style="margin-bottom: 15px;">
+								<i class="ti-shield"></i>
+							</div>
+							<h5 style="font-weight: 700; margin-bottom: 12px; color: #111827;">VPN Service (Safe DNS)</h5>
+							<p style="font-size: 14px; color: #4b5563; line-height: 1.6;">
+								If you turn on adult content blocking, Savio asks you to approve Android's VPN permission.
+							</p>
+							<p style="font-size: 13px; color: #0284c7; font-weight: 600; line-height: 1.5; margin-top: 10px; background: #f0f9ff; padding: 8px 12px; border-radius: 8px;">
+								✓ Uses a 100% local on-device VPN solely to filter DNS requests.<br>
+								✓ Blocks adult and harmful sites instantly.<br>
+								✓ Does not route traffic through third-party servers.
+							</p>
+						</div>
+					</div>
+
+					<!-- Foreground Service -->
+					<div class="col-md-4 col-sm-6 res-margin-sm wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".4s">
+						<div style="background: #ffffff; padding: 30px 24px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); height: 100%; border-top: 4px solid #10b981;">
+							<div class="icon-bg-sm grdnt-cyan" style="margin-bottom: 15px;">
+								<i class="ti-bell"></i>
+							</div>
+							<h5 style="font-weight: 700; margin-bottom: 12px; color: #111827;">Foreground Service</h5>
+							<p style="font-size: 14px; color: #4b5563; line-height: 1.6;">
+								Savio runs a foreground service while a screen time timer, focus timer, Pomodoro timer, or app block is active.
+							</p>
+							<p style="font-size: 13px; color: #4b5563; font-weight: 600; line-height: 1.5; margin-top: 10px; background: #f3f4f6; padding: 8px 12px; border-radius: 8px;">
+								✓ Keeps your focus and study timers 100% accurate.<br>
+								✓ Displays a convenient notification to pause or resume sessions.<br>
+								✓ Shuts down as soon as timers complete.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center" style="margin-top: 30px;">
+					<a href="privacy-policy.html" class="btn btn-outline" style="border: 2px solid #702dda; color: #702dda; padding: 10px 24px; border-radius: 25px; margin-right: 10px;">Read Full Privacy Policy</a>
+					<a href="https://docs.google.com/document/u/0/d/1EKEgxtE6B9QRJJhlcj5vffCDq4C2yXrIZg8A8gs5y3Q/edit" target="_blank" rel="noopener" class="btn btn-outline" style="border: 2px solid #666; color: #666; padding: 10px 24px; border-radius: 25px;">Official Document <i class="fa fa-external-link"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Permissions -->
 
 <!-- Pricing -->
 <section id="pricing" class="sec-pad-lg bg-gray">
 	<div class="container">
 		<div class="row">
-			<div class="row">
-				<div class="pricing wrapper">
-					<div class="text-center section-text wow animated fadeInUp" data-wow-duration="2s"
-						data-wow-delay=".2s">
-						<h4>Simple & Transparent Pricing</h4>
-						<div class="spce"></div>
-						<p class="large fx-wdth">Focus On helps you stay productive without distractions. Start free and upgrade anytime for more control.</p>
-					</div>
-
-					<div class="pricing-btn text-center wow animated fadeInUp" data-wow-duration="1.2s"
-						data-wow-delay=".3s">
-						<label class="toggler toggler--is-active" id="filt-monthly">Free</label>
-						<div class="toggle">
-							<input type="checkbox" id="switcher" class="check">
-							<b class="b switch"></b>
-						</div>
-						<label class="toggler" id="filt-hourly">Lifetime</label>
-					</div>
-
+			<div class="pricing wrapper">
+				<div class="text-center section-text wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+					<h4 style="font-size: 32px; font-weight: 700;">Simple & Transparent Pricing</h4>
 					<div class="spce"></div>
+					<p class="large fx-wdth" style="max-width: 650px; margin: 0 auto; color: #666;">
+						Savio is a <strong>free Focus App</strong> with an optional Pro subscription that unlocks advanced features like strict mode. Manage or cancel it anytime in Google Play.
+					</p>
+				</div>
 
-					<div class="pricing light text-center wow animated fadeInUp" data-wow-duration="1.4s"
-						data-wow-delay=".4s">
-
-						<!-- FREE (Monthly side) -->
-						<div id="monthly" class="clearfix model">
-							<div class="col-sm-4">
-								<div class="pricing-table grdnt-purple res-margin-sm">
-									<div class="pricing-header">
-										<div class="main-pricing">
-											<h5>Free</h5>
-											<h3 class="fw-400"><span class="rate">$0</span><span class="meta fw-300"> / forever</span></h3>
-										</div>
-									</div>
-									<div class="pricing-content">
-										<div class="pricing-feature">
-											<ul>
-												<li>Minimalist launcher experience</li>
-												<li>Distraction-free home screen</li>
-												<li>Essential apps access only</li>
-												<li>Lightweight & fast performance</li>
-												<li>Basic focus tools</li>
-											</ul>
-										</div>
-									</div>
-									<div class="pricing-footer">
-										<div class="pricing-footer">
-											<a class="btn grdnt-purple" href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher">Start Free</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- PRO (Optional placeholder but aligned) -->
-							<div class="col-sm-4">
-								<div class="pricing-table grdnt-tranquil res-margin-sm">
-									<div class="pricing-header">
-										<div class="main-pricing">
-											<h5>Focus Mode</h5>
-											<h3 class="fw-400"><span class="rate">$20</span><span class="meta fw-300"> / month</span></h3>
-										</div>
-									</div>
-									<div class="pricing-content">
-										<div class="pricing-feature">
-											<ul>
-												<li>Distraction blocking</li>
-												<li>App usage control</li>
-												<li>Simple UI experience</li>
-												<li>No learning curve</li>
-												<li>Instant activation</li>
-											</ul>
-										</div>
-									</div>
-									<div class="pricing-footer">
-										<div class="pricing-footer">
-											<a class="btn grdnt-orange" href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher">Explore</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- LIFETIME -->
-							<div class="col-sm-4">
-								<div class="pricing-table grdnt-cyan res-margin-sm">
-									<div class="pricing-header">
-										<div class="main-pricing">
-											<h5>Lifetime ★ Best Value</h5>
-											<h3 class="fw-400"><span class="rate">$500</span><span class="meta fw-300"> one-time</span></h3>
-										</div>
-									</div>
-									<div class="pricing-content">
-										<div class="pricing-feature">
-											<ul>
-												<li>All premium features unlocked</li>
-												<li>Advanced focus mode & blocking</li>
-												<li>Screen time analytics</li>
-												<li>Ad-free experience</li>
-												<li>Lifetime updates included</li>
-											</ul>
-										</div>
-									</div>
-									<div class="pricing-footer">
-										<div class="pricing-footer">
-											<a class="btn grdnt-cyan" href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher">Get Lifetime</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- YEARLY (same but duplicated as toggle system needs it) -->
-						<div id="hourly" class="none clearfix model">
-							<div class="col-sm-4">
-								<div class="pricing-table grdnt-purple res-margin-sm">
-									<div class="pricing-header">
-										<div class="main-pricing">
-											<h5>Free</h5>
-											<h3 class="fw-400"><span class="rate">$0</span><span class="meta fw-300"> forever</span></h3>
-										</div>
-									</div>
-									<div class="pricing-content">
-										<div class="pricing-feature">
-											<ul>
-												<li>Minimalist launcher experience</li>
-												<li>Distraction-free home screen</li>
-												<li>Essential apps access only</li>
-												<li>Lightweight performance</li>
-												<li>Basic focus tools</li>
-											</ul>
-										</div>
-									</div>
-									<div class="pricing-footer">
-										<div class="pricing-footer">
-											<a class="btn grdnt-purple" href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher">Start Free</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4">
-								<div class="pricing-table grdnt-tranquil res-margin-sm">
-									<div class="pricing-header">
-										<div class="main-pricing">
-											<h5>Focus Mode</h5>
-											<h3 class="fw-400"><span class="rate">$200</span><span class="meta fw-300"> always</span></h3>
-										</div>
-									</div>
-									<div class="pricing-content">
-										<div class="pricing-feature">
-											<ul>
-												<li>Block distractions</li>
-												<li>Limit app usage</li>
-												<li>Clean UI</li>
-												<li>Fast performance</li>
-												<li>Easy to use</li>
-											</ul>
-										</div>
-									</div>
-									<div class="pricing-footer">
-										<div class="pricing-footer">
-											<a class="btn grdnt-orange" href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher">Explore</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4">
-								<div class="pricing-table grdnt-cyan res-margin-sm">
-									<div class="pricing-header">
-										<div class="main-pricing">
-											<h5>Lifetime ★ Best Value</h5>
-											<h3 class="fw-400"><span class="rate">$900</span><span class="meta fw-300"> one-time</span></h3>
-										</div>
-									</div>
-									<div class="pricing-content">
-										<div class="pricing-feature">
-											<ul>
-												<li>All premium features</li>
-												<li>Advanced controls</li>
-												<li>No ads</li>
-												<li>Analytics included</li>
-												<li>Lifetime updates</li>
-											</ul>
-										</div>
-									</div>
-									<div class="pricing-footer">
-										<div class="pricing-footer">
-											<a class="btn grdnt-cyan" href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher">Get Lifetime</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
+				<div class="pricing-btn text-center wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".3s">
+					<label class="toggler toggler--is-active" id="filt-monthly">Free & Monthly</label>
+					<div class="toggle">
+						<input type="checkbox" id="switcher" class="check">
+						<b class="b switch"></b>
 					</div>
+					<label class="toggler" id="filt-hourly">Lifetime Access</label>
+				</div>
+
+				<div class="spce"></div>
+
+				<div class="pricing light text-center wow animated fadeInUp" data-wow-duration="1.4s" data-wow-delay=".4s">
+
+					<!-- Monthly side -->
+					<div id="monthly" class="clearfix model">
+						<!-- FREE TIER -->
+						<div class="col-sm-4">
+							<div class="pricing-table grdnt-purple res-margin-sm">
+								<div class="pricing-header">
+									<div class="main-pricing">
+										<h5>Free</h5>
+										<h3 class="fw-400"><span class="rate">$0</span><span class="meta fw-300"> / forever</span></h3>
+									</div>
+								</div>
+								<div class="pricing-content">
+									<div class="pricing-feature">
+										<ul>
+											<li>Reels & Shorts blocking</li>
+											<li>Smart app block on schedule</li>
+											<li>Flexible focus timers</li>
+											<li>Pomodoro study timer streaks</li>
+											<li>Basic AI focus coach reflections</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pricing-footer">
+									<a class="btn grdnt-purple" href="#download">Start Free</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- PRO MONTHLY -->
+						<div class="col-sm-4">
+							<div class="pricing-table grdnt-tranquil res-margin-sm">
+								<div class="pricing-header">
+									<div class="main-pricing">
+										<h5>Savio Pro</h5>
+										<h3 class="fw-400"><span class="rate">$4.99</span><span class="meta fw-300"> / month</span></h3>
+									</div>
+								</div>
+								<div class="pricing-content">
+									<div class="pricing-feature">
+										<ul>
+											<li><strong>Strict Mode</strong> (unbypassable blocks)</li>
+											<li>Safe DNS adult site filtering</li>
+											<li>Personalized AI coach deep insights</li>
+											<li>Unlimited app blocking schedules</li>
+											<li>Full screen time analytics</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pricing-footer">
+									<a class="btn grdnt-orange" href="#download">Get Savio Pro</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- LIFETIME HIGHLIGHT -->
+						<div class="col-sm-4">
+							<div class="pricing-table grdnt-cyan res-margin-sm">
+								<div class="pricing-header">
+									<div class="main-pricing">
+										<h5>Lifetime ★ Best Value</h5>
+										<h3 class="fw-400"><span class="rate">$39.99</span><span class="meta fw-300"> one-time</span></h3>
+									</div>
+								</div>
+								<div class="pricing-content">
+									<div class="pricing-feature">
+										<ul>
+											<li>All Pro features unlocked forever</li>
+											<li>Strict Mode & Safe DNS included</li>
+											<li>Future AI upgrades & features</li>
+											<li>Cancel anytime policy on Play Store</li>
+											<li>100% ad-free experience</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pricing-footer">
+									<a class="btn grdnt-cyan" href="#download">Get Lifetime</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Lifetime / Yearly toggle side -->
+					<div id="hourly" class="none clearfix model">
+						<div class="col-sm-4">
+							<div class="pricing-table grdnt-purple res-margin-sm">
+								<div class="pricing-header">
+									<div class="main-pricing">
+										<h5>Free</h5>
+										<h3 class="fw-400"><span class="rate">$0</span><span class="meta fw-300"> forever</span></h3>
+									</div>
+								</div>
+								<div class="pricing-content">
+									<div class="pricing-feature">
+										<ul>
+											<li>Reels & Shorts blocking</li>
+											<li>Smart app block on schedule</li>
+											<li>Pomodoro study timer streaks</li>
+											<li>Screen time tracking</li>
+											<li>Basic AI coach reflections</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pricing-footer">
+									<a class="btn grdnt-purple" href="#download">Start Free</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="pricing-table grdnt-tranquil res-margin-sm">
+								<div class="pricing-header">
+									<div class="main-pricing">
+										<h5>Annual Pro</h5>
+										<h3 class="fw-400"><span class="rate">$29.99</span><span class="meta fw-300"> / year</span></h3>
+									</div>
+								</div>
+								<div class="pricing-content">
+									<div class="pricing-feature">
+										<ul>
+											<li>Save 50% vs monthly</li>
+											<li>Strict Mode & Safe DNS filtering</li>
+											<li>AI focus coach daily coaching</li>
+											<li>Unlimited schedule profiles</li>
+											<li>Continuous streak protection</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pricing-footer">
+									<a class="btn grdnt-orange" href="#download">Get Annual</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="pricing-table grdnt-cyan res-margin-sm">
+								<div class="pricing-header">
+									<div class="main-pricing">
+										<h5>Lifetime ★ Best Value</h5>
+										<h3 class="fw-400"><span class="rate">$39.99</span><span class="meta fw-300"> one-time</span></h3>
+									</div>
+								</div>
+								<div class="pricing-content">
+									<div class="pricing-feature">
+										<ul>
+											<li>One single payment for life</li>
+											<li>Strict mode & custom schedules</li>
+											<li>Safe DNS filtering included</li>
+											<li>Priority customer support</li>
+											<li>All future AI models included</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pricing-footer">
+									<a class="btn grdnt-cyan" href="#download">Get Lifetime</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -717,203 +875,164 @@
 </section>
 <!-- End Pricing -->
 
-<!-- FAQS-->
-<section class="sec-pad-lg bg-gray pt-0">
+<!-- FAQS -->
+<section id="faq" class="sec-pad-lg bg-gray pt-0">
 	<div class="container">
 		<div class="row">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="faq-wrapper row">
-						<div class="text-center section-text wow animated fadeInUp" data-wow-duration="2s"
-							data-wow-delay=".2s">
-							<h4>Frequently Asked Questions</h4>
-							<div class="spce"></div>
-							<p class="large fx-wdth">Everything you need to know about Focus On — your minimalist launcher for a distraction-free life.</p>
-						</div>
+			<div class="col-md-10 col-md-offset-1">
+				<div class="faq-wrapper row">
+					<div class="text-center section-text wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+						<h4 style="font-size: 32px; font-weight: 700;">Frequently Asked Questions</h4>
+						<div class="spce"></div>
+						<p class="large fx-wdth" style="max-width: 680px; margin: 0 auto; color: #666;">
+							Everything you need to know about Savio — your AI focus coach and smart app blocker.
+						</p>
+					</div>
 
-						<div class="row">
-							<div class="faq-items right-dir-col col-md-8">
+					<div class="row" style="margin-top: 30px;">
+						<div class="faq-items right-dir-col col-md-8">
 
-								<div class="col-sm-6 res-margin-sm wow fadeInUp animated" data-wow-duration="1.2s"
-									data-wow-delay=".2s">
-									<div class="icon-bg-sm grdnt-pink">
-										<span class="clip-txt">1</span>
-									</div>
-									<div class="text">
-										<h5>How to install?</h5>
-										<p>Download Focus On from the Play Store, open the app, and set it as your default launcher in your phone settings.</p>
-									</div>
+							<!-- FAQ 1 -->
+							<div class="col-sm-6 res-margin-sm wow fadeInUp animated" data-wow-duration="1.2s" data-wow-delay=".2s">
+								<div class="icon-bg-sm grdnt-pink">
+									<span class="clip-txt">1</span>
 								</div>
-
-								<div class="col-sm-6 wow fadeInUp animated" data-wow-duration="1.2s"
-									data-wow-delay=".2s">
-									<div class="icon-bg-sm grdnt-pink">
-										<span class="clip-txt">2</span>
-									</div>
-									<div class="text">
-										<h5>Is this free?</h5>
-										<p>Yes, Focus On is free to use with essential features. You can upgrade to lifetime access for advanced tools.</p>
-									</div>
+								<div class="text">
+									<h5>How does Savio block Reels & Shorts?</h5>
+									<p>Savio's Reels blocker and Shorts blocking detect when a short-video feed opens and stop it right there. Long-form videos and everything else in the same apps play as normal.</p>
 								</div>
-
-								<div class="spce lg"></div>
-
-								<div class="col-sm-6 res-margin-sm wow fadeInUp animated" data-wow-duration="1.2s"
-									data-wow-delay=".2s">
-									<div class="icon-bg-sm grdnt-pink">
-										<span class="clip-txt">3</span>
-									</div>
-									<div class="text">
-										<h5>Where can I download it?</h5>
-										<p>You can download the app directly from the Google Play Store. A download button is available on this page.</p>
-									</div>
-								</div>
-
-								<div class="col-sm-6 wow fadeInUp animated" data-wow-duration="1.2s"
-									data-wow-delay=".2s">
-									<div class="icon-bg-sm grdnt-pink">
-										<span class="clip-txt">4</span>
-									</div>
-									<div class="text">
-										<h5>Can I get a refund?</h5>
-										<p>If you purchase the lifetime plan, refunds depend on Play Store policies. Please check Google Play refund guidelines.</p>
-									</div>
-								</div>
-
-								<div class="spce lg"></div>
-
-								<div class="col-sm-6 wow fadeInUp animated" data-wow-duration="1.2s"
-									data-wow-delay=".2s">
-									<div class="icon-bg-sm grdnt-pink">
-										<span class="clip-txt">5</span>
-									</div>
-									<div class="text">
-										<h5>How long is the lifetime plan valid?</h5>
-										<p>Lifetime access is a one-time purchase that gives you unlimited use of all premium features forever.</p>
-									</div>
-								</div>
-
-								<div class="col-sm-6 res-margin-sm wow fadeInUp animated" data-wow-duration="1.2s"
-									data-wow-delay=".2s">
-									<div class="icon-bg-sm grdnt-pink">
-										<span class="clip-txt">6</span>
-									</div>
-									<div class="text">
-										<h5>How do I use Focus On?</h5>
-										<p>Simply set it as your launcher, select essential apps, enable focus mode, and enjoy a clean, distraction-free experience.</p>
-									</div>
-								</div>
-
 							</div>
 
-							<div class="col-md-4 wow fadeInUp animated" data-wow-duration="1.2s" data-wow-delay=".3s">
-								<img alt="Focus On FAQ" src="image/img-faq.png">
+							<!-- FAQ 2 -->
+							<div class="col-sm-6 wow fadeInUp animated" data-wow-duration="1.2s" data-wow-delay=".2s">
+								<div class="icon-bg-sm grdnt-pink">
+									<span class="clip-txt">2</span>
+								</div>
+								<div class="text">
+									<h5>Does Savio read my private messages?</h5>
+									<p>No, never. Savio does not read typed text, messages, or passwords, and does not collect or share what appears on your screen. Your privacy is 100% protected.</p>
+								</div>
+							</div>
+
+							<div class="spce lg"></div>
+
+							<!-- FAQ 3 -->
+							<div class="col-sm-6 res-margin-sm wow fadeInUp animated" data-wow-duration="1.2s" data-wow-delay=".2s">
+								<div class="icon-bg-sm grdnt-pink">
+									<span class="clip-txt">3</span>
+								</div>
+								<div class="text">
+									<h5>What is the AI Focus Coach?</h5>
+									<p>Savio guides you with daily reflections and personalized tips, helping you recognize triggers and build steady habits so beating phone addiction feels like progress, not punishment.</p>
+								</div>
+							</div>
+
+							<!-- FAQ 4 -->
+							<div class="col-sm-6 wow fadeInUp animated" data-wow-duration="1.2s" data-wow-delay=".2s">
+								<div class="icon-bg-sm grdnt-pink">
+									<span class="clip-txt">4</span>
+								</div>
+								<div class="text">
+									<h5>What are No Phone sessions?</h5>
+									<p>Set a timer, put your phone down, and let Savio protect your attention. It creates an uninterrupted boundary so you can focus on studies, reading, or sleep.</p>
+								</div>
+							</div>
+
+							<div class="spce lg"></div>
+
+							<!-- FAQ 5 -->
+							<div class="col-sm-6 res-margin-sm wow fadeInUp animated" data-wow-duration="1.2s" data-wow-delay=".2s">
+								<div class="icon-bg-sm grdnt-pink">
+									<span class="clip-txt">5</span>
+								</div>
+								<div class="text">
+									<h5>How does Safe DNS filtering work?</h5>
+									<p>When you enable adult content blocking, Savio runs a local on-device VPN solely to filter DNS requests and block adult or harmful sites without routing your web data externally.</p>
+								</div>
+							</div>
+
+							<!-- FAQ 6 -->
+							<div class="col-sm-6 wow fadeInUp animated" data-wow-duration="1.2s" data-wow-delay=".2s">
+								<div class="icon-bg-sm grdnt-pink">
+									<span class="clip-txt">6</span>
+								</div>
+								<div class="text">
+									<h5>Is Savio free? How do I cancel Pro?</h5>
+									<p>Savio is a free Focus App with an optional Pro subscription for advanced tools like strict mode. You can manage or cancel your subscription anytime directly in Google Play.</p>
+								</div>
 							</div>
 
 						</div>
+
+						<div class="col-md-4 wow fadeInUp animated" data-wow-duration="1.2s" data-wow-delay=".3s">
+							<img alt="Savio FAQ" src="image/img-faq.png">
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!--  -->
+<!-- End FAQ -->
 
-<!-- Call To Action -->
-<section class="grdnt-pink sec-pad bg-trans-3 light">
+<!-- Call To Action & Download -->
+<section id="download" class="grdnt-pink sec-pad bg-trans-3 light">
 	<div class="container">
 		<div class="row">
 			<div class="text-center sec-pad-sm pt-0 section-text wow animated fadeInUp" data-wow-duration="2s"
 				data-wow-delay=".2s">
-				<h4>Join our community of 200,000+ users from around the world enjoying Focus On</h4>
-				<p class="large fx-wdth">Be part of a distraction-free lifestyle! Thousands of users are already simplifying their digital life with our app.</p>
-				<div class="btn-holder">
-					<a href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher"><img alt="Google Play Badge" src="image/an-badge.png"></a>
-					<a href="#"><img alt="App Store Badge" src="image/is-badge.png"><span>(coming soon)</span>span></a>
+				<h3 style="color: white; font-size: 38px; font-weight: 700;">Download Savio</h3>
+				<h4 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-top: 10px;">Your AI focus coach and app blocker</h4>
+				<p class="large fx-wdth" style="max-width: 600px; margin: 20px auto 0; color: white;">
+					Reduce screen time, stop scrolling and live more. Start today and reclaim hours of your life.
+				</p>
+				<div class="btn-holder" style="margin-top: 30px;">
+					<a href="https://play.google.com/store/apps/details?id=com.expandtimes.focuson.launcher" target="_blank" rel="noopener">
+						<img alt="Get Savio on Google Play" src="image/an-badge.png">
+					</a>
+					<a href="#" style="opacity: 0.85;">
+						<img alt="App Store Badge" src="image/is-badge.png">
+						<span style="display: block; font-size: 12px; color: #fff; margin-top: 4px;">(iOS coming soon)</span>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!--  -->
+<!-- End CTA -->
 
-<!--Count -->
-	<section class="count-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 count-over">
-					<div class="row res-center-sm text-center grad-orange">
-						<div class="col-sm-3 res-center-sm wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-							<div class="item clearfix">
-								<div class="text">
-									<h4 class="heading clip-txt"><span class="counter mg-0">789</span><span>M</span></h4>
-									<p>Total Downloads</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-							<div class="item clearfix">
-								<div class="text">
-									<h4 class="heading clip-txt"><span class="counter mg-0">99</span><span>%</span></h4>
-									<p>Page Speed</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 res-center-sm wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-							<div class="item clearfix">
-								<div class="text">
-									<h4 class="heading clip-txt"><span class="counter mg-0">10</span><span>+</span></h4>
-									<p>Years Top Rating App</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-							<div class="item clearfix">
-								<div class="text">
-									<h4 class="heading clip-txt"><span class="counter mg-0">100</span><span>M</span></h4>
-									<p>Happy Users</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End count -->
-
-
-
-<!-- Screenshot -->
+<!-- Screenshots -->
 <section class="sec-pad-lg">
 	<div class="container">
 		<div class="row">
 			<div class="text-center section-text wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-				<h4>Great Interface Amazed You</h4>
+				<h4 style="font-size: 32px; font-weight: 700;">Clean, Focused Interface</h4>
 				<div class="spce"></div>
-				<p class="large fx-wdth">With a massive range of powerful new features with a gorgeous new
-					interface, our app is easier to use and more.</p>
+				<p class="large fx-wdth" style="max-width: 650px; margin: 0 auto; color: #666;">
+					Designed to make digital detox and deep study feel natural, satisfying, and distraction-free.
+				</p>
 			</div>
-			<div class="screenshot wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+			<div class="screenshot wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".3s" style="margin-top: 40px;">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img alt="" src="image/img-1.png">
+							<img alt="Savio Screenshot" src="image/img-1.png">
 						</div>
 						<div class="swiper-slide">
-							<img alt="" src="image/img-4.png">
+							<img alt="Savio Screenshot" src="image/img-4.png">
 						</div>
 						<div class="swiper-slide">
-							<img alt="" src="image/img-1.png">
+							<img alt="Savio Screenshot" src="image/img-1.png">
 						</div>
 						<div class="swiper-slide">
-							<img alt="" src="image/img-4.png">
+							<img alt="Savio Screenshot" src="image/img-4.png">
 						</div>
 						<div class="swiper-slide">
-							<img alt="" src="image/img-1.png">
+							<img alt="Savio Screenshot" src="image/img-1.png">
 						</div>
 						<div class="swiper-slide">
-							<img alt="" src="image/img-4.png">
+							<img alt="Savio Screenshot" src="image/img-4.png">
 						</div>
 					</div>
 				</div>
@@ -921,35 +1040,16 @@
 		</div>
 	</div>
 </section>
-<!-- // -->
+<!-- End Screenshots -->
 
-
-<!-- Testimonial -->
+<!-- Testimonials -->
 <section class="testimonial bg-gray sec-pad-lg">
     <div class="text-center wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-        <h4>Trusted by teams at over 200,000</h4>
+        <h4 style="font-size: 32px; font-weight: 700;">What Our Users Say</h4>
+        <p style="color: #666; margin-top: 8px;">Real stories from students, creators, and everyday phone users.</p>
     </div>
     <div class="spce"></div>
-    <div class="logo text-center clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="col-sm-3 col-xs-6 res-margin-sm">
-                        <img alt="" src="image/client-img-1.png">
-                    </div>
-                    <div class="col-sm-3 col-xs-6 res-margin-sm">
-                        <img alt="" src="image/client-img-2.png">
-                    </div>
-                    <div class="col-sm-3 col-xs-6 res-margin-sm">
-                        <img alt="" src="image/client-img-3.png">
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <img alt="" src="image/client-img-4.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="owl-carousel sec-pad pb-0 grad-yellow quote quote-wrapper wow animated fadeInUp"
         data-wow-duration="1.2s" data-wow-delay=".2s">
 
@@ -958,12 +1058,12 @@
             <img class="quote-img" alt="" src="image/quote.png">
             <div class="spce"></div>
             <div class="quote-text">
-                <h5>“Focus project delivery improved significantly thanks to Mappox’s seamless tools.”</h5>
+                <h5>“Blocking Reels while keeping YouTube lectures saved my semester. Savio helped me score my highest grades yet!”</h5>
                 <div class="spce"></div>
-                <div class="profile-img"><img alt="" src="image/profile-img.jpg"></div>
+                <div class="profile-img"><img alt="Student User" src="image/profile-img.jpg"></div>
                 <div class="profile clearfix">
-                    <h6 class="heading">Roger Bentham</h6>
-                    <p>Manager</p>
+                    <h6 class="heading">Alex Morgan</h6>
+                    <p>Computer Science Student</p>
                 </div>
             </div>
         </div>
@@ -973,12 +1073,12 @@
             <img class="quote-img" alt="" src="image/quote.png">
             <div class="spce"></div>
             <div class="quote-text">
-                <h5>“Our project delivery improved significantly thanks to Mappox’s seamless tools.”</h5>
+                <h5>“I used to open Instagram for 2 minutes and lose 45 minutes on Reels. Savio's Reels blocker broke the addiction completely.”</h5>
                 <div class="spce"></div>
-                <div class="profile-img"><img alt="" src="image/profile-img-2.jpg"></div>
+                <div class="profile-img"><img alt="Designer User" src="image/profile-img-2.jpg"></div>
                 <div class="profile clearfix">
                     <h6 class="heading">Sophia Turner</h6>
-                    <p>Team Lead</p>
+                    <p>Product Designer</p>
                 </div>
             </div>
         </div>
@@ -988,12 +1088,12 @@
             <img class="quote-img" alt="" src="image/quote.png">
             <div class="spce"></div>
             <div class="quote-text">
-                <h5>“Mappox’s analytics gave us better insights into our workflow efficiency.”</h5>
+                <h5>“The AI focus coach check-ins don't feel punishing — they feel like a supportive mentor keeping me honest every evening.”</h5>
                 <div class="spce"></div>
-                <div class="profile-img"><img alt="" src="image/profile-img-3.jpg"></div>
+                <div class="profile-img"><img alt="Professional User" src="image/profile-img-3.jpg"></div>
                 <div class="profile clearfix">
                     <h6 class="heading">Michael Adams</h6>
-                    <p>Product Manager</p>
+                    <p>Software Engineer</p>
                 </div>
             </div>
         </div>
@@ -1003,158 +1103,46 @@
             <img class="quote-img" alt="" src="image/quote.png">
             <div class="spce"></div>
             <div class="quote-text">
-                <h5>“Switching to Mappox was the best decision for our IT infrastructure.”</h5>
+                <h5>“The No Phone sessions gave me my evenings back with my family. My daily screen time went from 6 hours to 2 hours.”</h5>
                 <div class="spce"></div>
-                <div class="profile-img"><img alt="" src="image/profile-img.jpg"></div>
+                <div class="profile-img"><img alt="Parent User" src="image/profile-img.jpg"></div>
                 <div class="profile clearfix">
                     <h6 class="heading">James Wilson</h6>
-                    <p>Senior Developer</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Item 5 -->
-        <div class="quote-item clearfix">
-            <img class="quote-img" alt="" src="image/quote.png">
-            <div class="spce"></div>
-            <div class="quote-text">
-                <h5>“The customization options in Mappox helped us tailor exactly to our needs.”</h5>
-                <div class="spce"></div>
-                <div class="profile-img"><img alt="" src="image/profile-img-2.jpg"></div>
-                <div class="profile clearfix">
-                    <h6 class="heading">Emily Carter</h6>
-                    <p>UX Designer</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Item 6 -->
-        <div class="quote-item clearfix">
-            <img class="quote-img" alt="" src="image/quote.png">
-            <div class="spce"></div>
-            <div class="quote-text">
-                <h5>“Thanks to Mappox, we can scale our operations globally with zero downtime.”</h5>
-                <div class="spce"></div>
-                <div class="profile-img"><img alt="" src="image/profile-img-3.jpg"></div>
-                <div class="profile clearfix">
-                    <h6 class="heading">Daniel Smith</h6>
-                    <p>Operations Head</p>
+                    <p>Creative Director</p>
                 </div>
             </div>
         </div>
 
     </div>
 </section>
-<!-- End testimonial -->
+<!-- End Testimonial -->
 
-<!--Blog  -->
-<section class="sec-pad-lg" id="blog">
-	<div class="container">
-		<div class="row">
-			<div class="text-center section-text wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-				<h4>Latest News & Stories</h4>
-				<div class="spce"></div>
-				<p class="large fx-wdth">With a massive range of powerful new features with a gorgeous new
-					interface, our app is easier to use and more.</p>
-			</div>
-			<div class="post row wow animated fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
-				<div class="col-sm-4 res-margin">
-					<div class="post-col">
-						<a href="blog-single.html"><img alt="" src="image/blog-img-1.jpg"></a>
-						<div class="post-content">
-							<div class="spce md"></div>
-							<div class="category">
-								<a href="#">Technology</a>
-							</div>
-							<div class="post-text">
-								<a href="blog-single.html">
-									<h5>Introducing a Drill Down Table API in Cube.js</h5>
-								</a>
-							</div>
-							<ul class="post-meta clearfix">
-								<li>
-									<a href="blog-single.html"><i class="fa fa-user" aria-hidden="true"></i>Adam
-										moris</a>
-								</li>
-								<li>
-									<a href=""><i class="fa fa-calendar" aria-hidden="true"></i>Jun 20, 2020</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4 res-margin">
-					<div class="post-col">
-						<a href="blog-single.html"><img alt="" src="image/blog-img-2.jpg"></a>
-						<div class="post-content">
-							<div class="spce md"></div>
-							<div class="category">
-								<a href="#">Coding</a>
-							</div>
-							<div class="post-text">
-								<a href="blog-single.html">
-									<h5>React Native Charts with Cube.js and Victory</h5>
-								</a>
-							</div>
-							<ul class="post-meta clearfix">
-								<li>
-									<a href="blog-single.html"><i class="fa fa-user" aria-hidden="true"></i>Adam
-										moris</a>
-								</li>
-								<li>
-									<a href=""><i class="fa fa-calendar" aria-hidden="true"></i>Jun 20, 2020</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4 res-margin">
-					<div class="post-col">
-						<a href="blog-single.html"><img alt="" src="image/blog-img-3.jpg"></a>
-						<div class="post-content">
-							<div class="spce md"></div>
-							<div class="category">
-								<a href="#">Design</a>
-							</div>
-							<div class="post-text">
-								<a href="blog-single.html">
-									<h5>Design Decisions for the First Embedded Analytics Open-Source Framework</h5>
-								</a>
-							</div>
-							<ul class="post-meta clearfix">
-								<li>
-									<a href="blog-single.html"><i class="fa fa-user" aria-hidden="true"></i>Adam
-										moris</a>
-								</li>
-								<li>
-									<a href=""><i class="fa fa-calendar" aria-hidden="true"></i>Jun 20, 2020</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End blog -->
-<!-- Contact-->
+<!-- Contact -->
 <section id="contact" class="contact sec-pad-lg pt-0">
 	<div class="container">
 		<div class="row bg-gray sec-pad">
 			<div class="row">
-				<div class="col-xs-10 col-xs-offset-1  wow animated fadeInUp" data-wow-duration="1s"
-					data-wow-delay=".2s">
+				<div class="col-xs-10 col-xs-offset-1 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
 					<div class="row">
 						<div class="col-md-5 col-sm-5 res-margin">
 							<ul class="grad-prple right-dir-col">
+								<li>
+									<span class="icon-sm clip-txt">
+										<i class="ti-info-alt"></i>
+									</span>
+									<div class="text">
+										<h6>Savio by Expand Times</h6>
+										AI Focus Coach & Screen Time Management
+									</div>
+									<div class="spce"></div>
+								</li>
 								<li>
 									<span class="icon-sm clip-txt">
 										<i class="ti-map"></i>
 									</span>
 									<div class="text">
 										<h6>Address</h6>
-										Alipur,Satkhira <br> Satkhira,Khulna <br>Dhaka,Bangladesh
+										Alipur, Satkhira <br> Satkhira, Khulna <br>Dhaka, Bangladesh
 									</div>
 									<div class="spce"></div>
 								</li>
@@ -1176,14 +1164,14 @@
 									</div>
 								</li>
 							</ul>
-
 						</div>
+
 						<div class="col-md-7 col-sm-7">
 							<div class="contact-form">
-								<h4>Request Contact</h4>
-								<div class="spce"></div>
-								<form id="contact-form" class="custom-form" method="post" action="assets/contact.php"
-									role="form">
+								<h4 style="font-weight: 700;">Get in Touch</h4>
+								<p style="color: #666; margin-bottom: 20px;">Have questions, feature requests, or partnership inquiries? Send us a message.</p>
+								<div class="spce sm"></div>
+								<form id="contact-form" class="custom-form" method="post" action="assets/contact.php" role="form">
 									<div class="messages"></div>
 									<div class="controls">
 										<div class="form-group">
@@ -1200,8 +1188,8 @@
 										</div>
 										<div class="form-group">
 											<textarea id="form_message" name="message" class="form-control"
-												placeholder="Message*" rows="4" required="required"
-												data-error="Please,leave us a message."></textarea>
+												placeholder="Your message *" rows="4" required="required"
+												data-error="Please leave us a message."></textarea>
 											<div class="help-block with-errors"></div>
 										</div>
 										<input type="submit" class="btn grdnt-purple" value="Send Message">
@@ -1215,17 +1203,18 @@
 		</div>
 	</div>
 </section>
-<!--  -->
-<!-- subscribe -->
-<div id="contact" class="sec-pad-lg grdnt-purple bg-trans-2 light">
+<!-- End Contact -->
+
+<!-- Subscribe -->
+<div class="sec-pad-lg grdnt-purple bg-trans-2 light">
 	<div class="container">
 		<div class="row">
 			<div class="subscribe-box wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
 				<div class="text-center section-text">
-					<h4>More than 25,000 teams using our app with great hopes</h4>
+					<h4 style="font-weight: 700; color: white;">Be the First to Experience New Focus Features</h4>
 				</div>
 				<div class="spce"></div>
-				<p class="large text-center">Subscribe for latest email, update, news</p>
+				<p class="large text-center" style="color: rgba(255,255,255,0.9);">Subscribe for Savio focus tips, research updates, and new release announcements.</p>
 				<div class="spce sm"></div>
 				<div class="sub-input subscribe custom-form">
 					<form class="mailchimp custom-form">
@@ -1245,58 +1234,60 @@
 		</div>
 	</div>
 </div>
-<!-- end subscribe -->
+<!-- End Subscribe -->
 
-<!--Footer  -->
-<footer id="footer" class="footer-wrapper bg-gray pb-0  sec-pad">
+<!-- Footer -->
+<footer id="footer" class="footer-wrapper bg-gray pb-0 sec-pad">
 	<div class="container footer-content">
 		<div class="row">
 			<div class="row footer-widget">
-				<div class="col-md-3 col-sm-6 res-margin">
-					<a href="index.html">
+				<div class="col-md-4 col-sm-6 res-margin">
+					<a href="index.html" style="display: inline-flex; align-items: center; text-decoration: none;">
 						<img id="logos" src="images/LogoSPS1.png" alt="Expand Times logo"
-							style="width: 150px; height: 50px; ">
+							style="width: 140px; height: 46px;">
+						<span style="font-size: 22px; font-weight: 700; color: #222; margin-left: 10px;">Savio</span>
 					</a>
 					<div class="spce"></div>
-					<p>Focus on what matters—building a great user experience. Use your native visualization
-						components.</p>
+					<p style="color: #666; font-size: 14px; line-height: 1.6;">
+						<strong>Savio {Save your time}</strong><br>
+						Your AI focus coach and smart app blocker. Stop scrolling, reduce screen time, block Reels & Shorts, and get your productivity back.
+					</p>
 				</div>
 				<div class="col-md-2 col-sm-6 col-md-offset-1 res-margin">
-					<h6>Product</h6>
+					<h6>App</h6>
 					<div class="spce"></div>
 					<ul>
-						<li><a href="#">Features</a></li>
-						<li><a href="#">Stories</a></li>
-						<li><a href="#">Pricing</a></li>
-
+						<li><a href="#feature">Features</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#step">How It Works</a></li>
+						<li><a href="#pricing">Pricing</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 col-sm-6 res-margin">
-					<h6>Support</h6>
+				<div class="col-md-2 col-sm-6 res-margin">
+					<h6>Trust & Legal</h6>
 					<div class="spce"></div>
 					<ul>
-						<li><a href="terms-conditions.html"target="_blank">Terms & Condition</a></li>
-						<li><a href="privacy-policy.html"target="_blank">Privacy Policy</a></li>
-						<li><a href="#">API</a></li>
-						<li><a href="#">Customers</a></li>
-
+						<li><a href="#permissions">Permissions</a></li>
+						<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+						<li><a href="#faq">FAQ</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<h6>Follow Us</h6>
+					<h6>Developer</h6>
 					<div class="spce"></div>
-					<ul>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Pinterest</a></li>
-
-					</ul>
+					<p style="font-size: 13px; color: #666; margin-bottom: 8px;">Developed with passion by <strong>Expand Times</strong>.</p>
+					<p style="font-size: 13px; color: #666;">Email: <a href="mailto:info@expandtimes.com">info@expandtimes.com</a></p>
+					<div class="spce sm"></div>
+					<a href="https://docs.google.com/document/u/0/d/1EKEgxtE6B9QRJJhlcj5vffCDq4C2yXrIZg8A8gs5y3Q/edit" target="_blank" rel="noopener" style="font-size: 13px; color: #702dda;">
+						<i class="fa fa-file-text-o" style="margin-right: 5px;"></i> View Policy Document
+					</a>
 				</div>
 			</div>
 			<div class="spce md"></div>
 			<div class="spce"></div>
-			<div class="copyright text-center">
-				Copyright © 2020 xappox. <strong>Freekytheme</strong> All Rights Reserved.
+			<div class="copyright text-center" style="border-top: 1px solid #e5e7eb; padding: 25px 0; color: #888; font-size: 13px;">
+				Copyright © 2026 <strong>Savio</strong> by Expand Times. All Rights Reserved.
 			</div>
 		</div>
 	</div>
@@ -1309,36 +1300,23 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h4>
+        <h4 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy — Savio: Screen Time & Focus AI</h4>
       </div>
-      <div class="modal-body">
-        <p><strong>App Name:</strong> Focus On: Minimalist Launcher</p>
-        <p><strong>Short Description:</strong> Minimal Looking Phone Launcher for Screen Time Limit and Digital Detox</p>
-        <p><strong>Effective Date:</strong> March 15, 2026</p>
+      <div class="modal-body" style="font-size: 14px; line-height: 1.6; color: #444;">
+        <p><strong>App Name:</strong> Savio: Screen Time & Focus AI</p>
+        <p><strong>Tagline:</strong> Save your time</p>
+        <p><strong>Category:</strong> Productivity</p>
         
-        <br>
-        <h5><strong>1. Information We Collect</strong></h5>
-        <p>Focus On: Minimalist Launcher does not collect any personal data. We respect your privacy and ensure that all information remains on your device.</p>
+        <hr>
+        <h5 style="font-weight: 700; color: #111;">Permissions and Privacy</h5>
+        <p><strong>Accessibility Service:</strong> Savio uses it to detect when you open apps you choose to limit or block, and to recognise when a Shorts or Reels screen is playing so it can block it. Long-form videos and other content are not blocked. Savio does not read typed text, messages, or passwords, and does not collect or share what appears on your screen.</p>
         
-        <br>
-        <h5><strong>2. Local Storage</strong></h5>
-        <p>Any information, such as your screen time usage, app settings, and customisations, is stored locally on your phone. This data is never transmitted to our servers or shared with third parties.</p>
+        <p><strong>VPN Service (Safe DNS):</strong> If you turn on adult content blocking, Savio asks you to approve Android's VPN permission. It uses a local VPN to filter DNS requests and block adult and harmful sites.</p>
         
-        <br>
-        <h5><strong>3. Permissions</strong></h5>
-        <p>The app only requests permissions necessary to function as a launcher. No additional personal information, such as contacts, location, or online activity, is accessed.</p>
+        <p><strong>Foreground Service:</strong> Savio runs a foreground service while a screen time timer, focus timer, Pomodoro timer, or app block is active to keep the timer accurate and show a manageable notification.</p>
         
-        <br>
-        <h5><strong>4. Third-Party Services</strong></h5>
-        <p>Focus On does not use any third-party analytics, advertising, or cloud services. All features operate fully offline.</p>
-        
-        <br>
-        <h5><strong>5. Data Security</strong></h5>
-        <p>All data stored on your device is managed according to standard Android security practices. We do not store or transmit your information externally.</p>
-        
-        <br>
-        <h5><strong>6. Children’s Privacy</strong></h5>
-        <p>This app is suitable for all ages. Since no personal data is collected, we do not knowingly gather information from children.</p>
+        <hr>
+        <p>For the complete details, please visit our <a href="privacy-policy.html" target="_blank">Full Privacy Policy Page</a> or view the <a href="https://docs.google.com/document/u/0/d/1EKEgxtE6B9QRJJhlcj5vffCDq4C2yXrIZg8A8gs5y3Q/edit" target="_blank" rel="noopener">Official Policy Document</a>.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1347,9 +1325,32 @@
   </div>
 </div>
 
-<!-- script -->
+<!-- Scripts -->
 <script src="js/vendor.bundle.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+	window.addEventListener("scroll", function () {
+		let logo = document.getElementById("logo");
+		let logoText = document.getElementById("logo-text");
+
+		if (window.scrollY > 50) {
+			if (logo) {
+				logo.style.filter = "invert(22%) sepia(94%) saturate(4742%) hue-rotate(195deg) brightness(97%) contrast(92%)";
+			}
+			if (logoText) {
+				logoText.style.color = "#252836";
+			}
+		} else {
+			if (logo) {
+				logo.style.filter = "brightness(0) invert(1)";
+			}
+			if (logoText) {
+				logoText.style.color = "#ffffff";
+			}
+		}
+	});
+</script>
 
 </body>
 
